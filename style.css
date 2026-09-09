@@ -7,7 +7,7 @@
   --white: #ffffff;
   --border-color: #e3d5ca;   
   box-shadow: #2d2424;
-  
+
 }
 
 * {
@@ -73,8 +73,7 @@ ul { list-style: none; }
 }
 
 .block-btn { display: block; text-align: center; margin-top: 2rem; }
-
-/* --- Layout Wrappers --- */
+/* layout */
 section {
   padding: 5rem 2rem;
   max-width: 1200px;
@@ -91,7 +90,7 @@ section {
   margin-bottom: 1rem;
 }
 
-/* --- Navbar --- */
+/* navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -108,7 +107,7 @@ section {
 .nav-menu a { color: var(--text-dark); font-size: 0.9rem; }
 .nav-buttons { display: flex; gap: 1rem; margin-left: 2rem; }
 
-/* --- Hero Section --- */
+/* uppar*/
 .hero-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -152,7 +151,7 @@ section {
 .hero-schedule small { opacity: 0.7; }
 .schedule-note { font-size: 0.8rem; opacity: 0.7; margin-top: 2rem; }
 
-/* --- Services Section --- */
+/* list */
 .services-list { border-top: 1px solid var(--border-color); }
 .service-row {
   display: grid;
@@ -166,7 +165,7 @@ section {
 .service-row p { color: var(--text-gray); font-size: 0.95rem; }
 .service-row .duration { font-size: 0.85rem; text-align: right; color: var(--text-gray); }
 
-/* --- About Section --- */
+/* section */
 .about-section {
   background-color: var(--dark-green);
   color: var(--white);
@@ -191,7 +190,7 @@ section {
 }
 .about-features li::before { content: '✓'; position: absolute; left: 0; color: var(--white); }
 
-/* --- Testimonials --- */
+/* review */
 .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
 .testimonial-card { background-color: var(--white); padding: 2.5rem; display: flex; flex-direction: column; }
 .quote-mark { font-size: 3rem; font-family: Georgia, serif; color: #ccc; line-height: 0.5; }
@@ -200,8 +199,7 @@ section {
 .avatar { width: 40px; height: 40px; background-color: var(--dark-green); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; }
 .author-details h4 { font-size: 0.9rem; }
 .author-details span { font-size: 0.8rem; color: var(--text-gray); }
-
-/* --- Pricing Section --- */
+/* price */
 .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 3rem; }
 .pricing-card { background-color: var(--white); padding: 3rem 2rem; border: 1px solid var(--border-color); }
 .dark-card { background-color: var(--dark-green); color: var(--white); border: none; }
@@ -215,14 +213,14 @@ section {
 .features-list li { margin-bottom: 1rem; font-size: 0.9rem; display: flex; gap: 0.5rem; }
 .features-list li::before { content: '✓'; }
 
-/* --- Mobile Responsiveness --- */
+/* mobile view */
 @media (max-width: 900px) {
   .hero-section, .about-section, .pricing-grid, .testimonials-grid { grid-template-columns: 1fr; }
   .service-row { grid-template-columns: 1fr; gap: 0.5rem; }
   .service-row .duration { text-align: left; }
   .hero-stats { flex-direction: column; gap: 1.5rem; }
   
-  /* Mobile Menu logic */
+ /* logic */
   .hamburger { display: flex; flex-direction: column; gap: 5px; cursor: pointer; z-index: 1001; }
   .hamburger .bar { width: 25px; height: 3px; background-color: var(--text-dark); transition: 0.3s; }
   .nav-menu { display: none; position: absolute; top: 70px; left: 0; width: 100%; background: var(--bg-color); flex-direction: column; padding: 2rem; border-bottom: 1px solid var(--border-color); z-index: 1000; }
@@ -257,7 +255,7 @@ section {
   .footer-bottom {
     font-size: 0.8rem;
     color: #063676;
-    border-top: 1px solid #333333; /* Line ka color thora light kiya hai */
+    border-top: 1px solid #333333; 
     padding-top: 1rem;
     line-height: 1.6;
   }
